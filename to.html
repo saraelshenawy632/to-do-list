@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="to.css">
+    <link rel="shortcut icon" href="icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+  <div class="list">
+    <h2 class="paragraph">TO-DO List <img src="icon.jpg" alt=""></h2>
+
+    <input type="text" placeholder="Add your task" class="input" id="input">
+    <button class="add" onclick="add()">Add</button>
+
+    <div class="tasks" id="tasks">
+        <ul id="ul">
+            <!-- العناصر سيتم إضافتها ديناميكيًا هنا -->
+        </ul>
+    </div>
+
+    <!-- زر الإزالة أسفل القائمة -->
+    <button class="xx" id="remove" onclick="removeAll()">Remove All</button>
+  </div>
+
+  <script src="to.js"></script>
+</body>
+</html>
